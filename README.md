@@ -40,7 +40,7 @@ lastName.Should().Be("Hraško");
 Vytvorili sme premennú ```person``` ako inštanciu triedy ```Person``` a rozložili ju do dvoch premenných.
 
 V triede stačí definovať metódu ```Deconstruct(out T var1, ... , out T varN)```. Parametre musia byť definované ako out.
-Môžme mať koľkokoľvek parametrov. Taktiež môžeme mať niekoľko preťažení danej metody.
+Môžeme mať koľkokoľvek parametrov. Taktiež môžeme mať niekoľko preťažení danej metody.
 
 Napríklad:
 ```
@@ -84,7 +84,7 @@ Ale keď to vyskúšame, tak kompilátor zahlási nasledujúci chybu:
 Dôvodom je, že je viacero spôsobov, akým sa dajú deklarovať premenné do ktorých sa to bude rozkladať. Preto nám neostáva nič iné, iba to akceptovať.
 
 # Extensions
-Ďalšiu výhodu, ktorú nám nová verzia jazyka prináša je, že môžme takto dekonštruvať aj triedy, ktoré nie sú naše. A to pomocou extension metódy.
+Ďalšiu výhodu, ktorú nám nová verzia jazyka prináša je, že môžeme takto dekonštruvať aj triedy, ktoré nie sú naše. A to pomocou extension metódy.
 
 Nasledujúci príklad ukáže, ako rozložiť inštanciu triedy ```Point``` do premenných ```x``` a ```y```.
 
@@ -99,7 +99,7 @@ public static class PointExtensions
     }
 }
 ```
-A následne už môžme rozkladať.
+A následne už môžeme rozkladať.
 ```
 Point point = new Point(45, 85);
 
@@ -110,4 +110,4 @@ y.Should().Be(85);
 ```
 
 # Magic pattern-base C# features
-Možno sa Vám to celé zdá magic. Menusím implementovať žiadne rozhranie, nemusím z ničoho dediť a ono to funguje. C# už vo viacerných novinkách využíva takzvaný pattern-base (alebo tiež convention-base) prístup. To znamená, že nadefinuje konvencie a tie keď dodržíme, tak to zrazu funguje :smile:
+Možno sa Vám to celé zdá magic. Nemusím implementovať žiadne rozhranie, nemusím z ničoho dediť a ono to funguje. C# už vo viacerných novinkách využíva takzvaný pattern-base (alebo tiež convention-base) prístup. To znamená, že nadefinuje konvencie a tie keď dodržíme, tak to zrazu funguje :smile:
