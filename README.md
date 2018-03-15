@@ -24,7 +24,7 @@ public class Person
 }
 ```
 
-Následne už môžte rozložiť vašu triedu do premenných.
+Následne už môžete rozložiť vašu triedu do premenných.
 ```
 var person = new Person()
 {
