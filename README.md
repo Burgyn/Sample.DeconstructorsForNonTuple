@@ -110,4 +110,4 @@ y.Should().Be(85);
 ```
 
 # Magic pattern-base C# features
-Možno sa Vám to celé zdá magic. Nemusím implementovať žiadne rozhranie, nemusím z ničoho dediť a ono to funguje. C# už vo viacerných novinkách využíva takzvaný pattern-base (alebo tiež convention-base) prístup. To znamená, že nadefinuje konvencie a tie keď dodržíme, tak to zrazu funguje :smile:
+Možno sa Vám to celé zdá magic. Nemusím implementovať žiadne rozhranie, nemusím z ničoho dediť a ono to funguje. C# už vo viacerých novinkách využíva takzvaný pattern-base (alebo tiež convention-base) prístup. To znamená, že nadefinuje konvencie a tie keď dodržíme, tak to zrazu funguje :smile:
